@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="first">
+        <div class="header"><h1>To-do List</h1></div>
+    </div>
+
+    <div class="whoa">
+        {% if not tolist %}
+        <form action="/" method="post">
+            <input name="todo" class="form-input" placeholder="Type in an activity to be done...">
+        </form>
+        {% else %}
+        <form action="/" method="post">
+            <input name="todo" class="form-input" placeholder="Type in a new activity to be done...">
+        </form>
+        {% endif %}
+    </div>
+    <div class="list">
+        <ol>
+            {% for i in tolist: %}
+            <li class="list-item">
+                <h3>
+                    <hr>
+                    <div class="checkbox">
+                        <input class="check" type="checkbox" name="to-do-item" value="item">
+                        <label class="strikethrough">{{ i }}</label>
+                    </div>
+
+                </h3>
+
+            </li>
+            {% endfor %}
+            <hr>
+        </ol>
+    </div>
+</body>
+</html>

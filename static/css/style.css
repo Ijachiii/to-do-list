@@ -1,0 +1,49 @@
+body{
+background-color: #FFF2F2;
+color: #413F42}
+
+.header{
+background-color: #F4BFBF;
+padding: 0.5% 0px 0.4% 4%;
+font-size: 2em;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.first{
+background-color: #F4BFBF;
+}
+
+
+.whoa{
+background-color: #FFF2F2}
+
+.form-input{
+background-color: #FFF2F2;
+outline: none;
+border: none;
+width: 100%;
+margin: 20px 0px 0px 4%;
+font-size: 300%;
+height: 40%}
+
+.form-input:focus{
+outline: none;}
+
+ol{
+padding-top: 2%}
+
+li{
+font-size: 200%;
+padding: }
+
+.check{
+width: 25px;
+height: 25px}
+
+input[type=checkbox]:checked + label.strikethrough {
+   text-decoration:line-through;}
+
+h3{
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px}
